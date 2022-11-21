@@ -3,6 +3,7 @@ version: "3.9"
 services:
   jqplay:
     build: .
+    platform: ${BUILDPLATFORM}
     depends_on:
       - db
     restart: always
